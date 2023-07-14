@@ -1,0 +1,307 @@
+@font-face {
+  font-family: Phonk;
+  src: url(font/Phonk\ Regular\ DEMO.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  --swiper-theme-color: #e22621;
+}
+
+html,
+body {
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll-progress {
+  width: 8px;
+  height: 0;
+  position: fixed;
+  background-color: #e22621;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+}
+
+/* N A V B A R */
+
+.navbar-custom {
+  background-color: #fff !important;
+}
+
+.navbar-brand img {
+  max-height: 55px;
+}
+
+/* S E C T I O N  T O P */
+
+.page-title {
+  margin-top: 100px;
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-family: Phonk;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.page-title h3 {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.product-wrapper {
+  width: 100%;
+  height: 400px;
+  background-color: #d9d9d9;
+  display: flex;
+  padding: 32px 96px;
+  margin-bottom: 50px;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.product-img {
+  width: 350px;
+  height: 350px;
+  z-index: 10;
+  background-color: #eee;
+}
+
+.pag-container {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-title {
+  color: #000;
+  text-align: left;
+  font-size: 32px;
+  font-family: Phonk;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-title h2 {
+  line-height: 1.5;
+}
+
+.product-description {
+  font-family: poppins;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.product-price {
+  color: #000;
+  text-align: left;
+  font-size: 32px;
+  font-family: Poppins;
+
+  text-transform: uppercase;
+}
+
+.swiper-pagination-bullet {
+  transition: 0.25s all ease;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.35);
+}
+
+/* N E W  A R R I V A L */
+.arrival-wrapper {
+  width: 100%;
+  height: 750px;
+  margin-top: 64px;
+  background-color: #d9d9d9;
+  align-items: center;
+  margin: 64px 0;
+}
+
+.arrival-img {
+  height: 100%;
+  width: 60%;
+  background-color: #eee;
+  margin: 0;
+}
+
+.arr-container {
+  padding: 80px;
+}
+
+.product-title h1 {
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.tab-links {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  font-family: Montserrat;
+  margin-bottom: 40px;
+  transition: all 0.25s ease;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e22621;
+  position: absolute;
+  left: 8px;
+  bottom: -6px;
+  transition: all 0.5s ease;
+}
+
+.tab-links.active-link {
+  color: #e22621;
+  font-weight: 700;
+}
+
+.tab-links.active-link::after {
+  border-radius: 12px;
+  width: 70%;
+}
+
+.tab-contents-wrapper {
+  width: 450px;
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.tab-contents {
+  display: none;
+  text-align: justify;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.arrival-button {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #e22621;
+  border-radius: 40px;
+}
+
+/* C A R D S  S E C T I O N */
+
+.card-swiper {
+  margin: auto;
+  width: 500px;
+}
+
+.card-product {
+  background-color: #ddd;
+  width: 300px;
+  height: 450px;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.card-product img {
+  max-width: 300px;
+  border-radius: 16px;
+}
+
+/* C O N T A C T  U S */
+.contact-us {
+  margin-top: 100px;
+  width: 100%;
+  height: 600px;
+  background-color: #d9d9d9;
+}
+
+.contact-us h1 {
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-family: Phonk;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-us span {
+  font-family: Montserrat;
+  font-weight: 800;
+}
+
+.contact-wrapper {
+  margin: 100px auto;
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.contact-wrapper p {
+  margin-bottom: 0;
+}
+
+.contact-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+i.uil::before {
+  font-size: 40px;
+}
+
+.contact-text {
+  /* background-color: #eee; */
+
+  text-align: center;
+  align-items: center;
+}
+
+/* F O O T E R */
+
+.footer {
+  width: 100%;
+  height: 65px;
+  background-color: #000;
+  color: #fff;
+  font-family: Montserrat;
+  align-items: center;
+  margin: 0;
+}
+
+.footer p {
+  margin: 0;
+}
