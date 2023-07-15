@@ -235,7 +235,7 @@ body {
 
 /* C O N T A C T  U S */
 .contact-us {
-  background-image: url("mockup/contact-bg@2x.png");
+  background-image: url("../mockup/contact-bg@2x.png");
   background-size: cover;
   margin-top: 100px;
   width: 100%;
